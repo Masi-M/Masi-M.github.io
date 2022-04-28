@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    color: whitesmoke;
+    margin: 0 2% 0 2%;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+h1{
+    padding-right: 2rem;
+}
+.p{
+    color: whitesmoke;
+}
+.nav-header {
+    display: inline-block;
+    justify-items: center;
+    margin:auto;
+}
+.nav-li li{
+    display: inline-block;
+    padding: 0 0 0 10%;
+}
