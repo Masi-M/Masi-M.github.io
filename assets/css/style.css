@@ -113,7 +113,11 @@ home
     font-weight: 500;
 }
 /*responsive query*/
-@media(max-width: 990px){
+@media(max-width: 947px){
+    .menu-btn{
+    display: block;
+    z-index: 999;
+}
     .wide-nav{
         padding: 0 50px;
     }
@@ -130,5 +134,7 @@ home
     }
     .nav-bar .nav-content li a{
         display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
     }
 }
