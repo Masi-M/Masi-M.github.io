@@ -61,6 +61,12 @@ navigation bar styling
 .nav-bar .nav-content li a{
     color: rgb(0, 0, 0)
 }
+.nav-bar.sticky .nav-content li a{
+    color: rgb(255, 255, 255);
+}
+.nav-bar.sticky .nav-content li a{
+    color: rgb(0, 0, 0);
+}
 .nav-bar .nav-content li a{
     color: white;
     font-size: 18px;
@@ -71,15 +77,12 @@ navigation bar styling
 .nav-bar .nav-content li a:hover{
     color: aqua;
 }
-.nav-bar.sticky .nav-content li a{
-    color: rgb(0, 0, 0);
-}
 .nav-bar.sticky .nav-content li a:hover{
     color: rgb(0, 0, 0);
 }
 /*menu button styling*/
 .menu-btn{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -139,6 +142,9 @@ home
         background: black;
         text-align: center;
         padding-top: 80px;
+    }
+    .nav-bar .menu.active{
+        display: block;
     }
     .nav-bar .nav-content li{
         display: block;
