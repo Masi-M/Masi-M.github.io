@@ -40,9 +40,12 @@ navigation bar styling
     color: white;
     font-size: 35px;
     font-weight: 600;
-
 }
 
+/*.nav-bar.sticky .logo a{
+    
+}
+*/
 .nav-bar .logo a span{
     color: aqua;
     transition: all 0.3s ease;
@@ -54,6 +57,9 @@ navigation bar styling
     list-style: none;
     display: inline-block;
 
+}
+.nav-bar.sticky .nav-content li a{
+    color: rgb(0, 0, 0)
 }
 .nav-bar .nav-content li a{
     color: white;
@@ -70,7 +76,7 @@ navigation bar styling
 }
 /*menu button styling*/
 .menu-btn{
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -128,6 +134,8 @@ home
         left: 0;
         top: 0;
         background: black;
+        text-align: center;
+        padding-top: 80px;
     }
     .nav-bar .nav-content li{
         display: block;
