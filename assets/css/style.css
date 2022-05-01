@@ -7,6 +7,7 @@ font : @import url()
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    
 }
 /*
 navigation bar styling
@@ -19,10 +20,15 @@ navigation bar styling
 .nav-bar{
     position: fixed;
     width: 100%;
-    padding: 30px 0;
+    padding: 20px 0;
     font-family: 'Courier New', Courier, monospace, sans-serif;
-    /*background: rgb(0, 0, 0);
-    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 45%,rgba(0,0,0,1) 45%, rgba(255,255,255,1) 46% rgba(0,0,0,1) 100%); */
+    transition: all 0.3s ease;
+    background: rgb(0, 0, 0);
+    /*background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 45%,rgba(0,0,0,1) 45%, rgba(255,255,255,1) 46% rgba(0,0,0,1) 100%); */
+}
+.nav-bar.sticky{
+    padding: 15px;
+    background: aqua;
 }
 
 .nav-bar .wide-nav{
@@ -36,8 +42,13 @@ navigation bar styling
     font-weight: 600;
 
 }
+
 .nav-bar .logo a span{
     color: aqua;
+    transition: all 0.3s ease;
+}
+.nav-bar.sticky .logo a span{
+    color: rgb(0, 0, 0);
 }
 .nav-bar .nav-content li{
     list-style: none;
@@ -53,6 +64,9 @@ navigation bar styling
 }
 .nav-bar .nav-content li a:hover{
     color: aqua;
+}
+.nav-bar.sticky .nav-content li a:hover{
+    color: rgb(0, 0, 0);
 }
 /*
 .logo  a:hover span{
