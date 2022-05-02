@@ -46,6 +46,13 @@ navigation bar styling
     
 }
 */
+.nav-bar .wide-nav .nav-content li a{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease-out;
+}
 .nav-bar .logo a span{
     color: aqua;
     transition: all 0.3s ease;
@@ -53,24 +60,27 @@ navigation bar styling
 .nav-bar.sticky .logo a span{
     color: rgb(0, 0, 0);
 }
-.nav-bar .nav-content li{
+.nav-bar .wide-nav .nav-content li{
     list-style: none;
     display: inline-block;
     color: rgb(255, 255, 255);
 }
-.nav-bar .nav-content li a{
-    color: rgb(255, 255, 255)
-}
-.nav-bar.sticky .nav-content li a{
+.nav-bar.sticky .wide-nav .nav-content li a{
     color: rgb(0, 0, 0);
 }
-.nav-bar .nav-content li a{
+.nav-bar.sticky .wide-nav .logo a:hover{
+    color: rgb(0, 0, 0);
+}
+.nav-bar.sticky .wide-nav .logo a span:hover{
+    color: rgb(255, 255, 255);
+}
+/*.nav-bar .nav-content li a{
     color: white;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease-out;
-}
+}*/
 .nav-bar .nav-content li a:hover{
     color: aqua;
 }
@@ -119,6 +129,9 @@ home css
     min-height: 500px;
     font-family: 'Courier New', Courier, monospace, sans-serif;
 }
+.background{
+    opacity: 0.5;
+}
 /*
 home 
 */
@@ -164,15 +177,15 @@ home
     .nav-bar .nav-content.active{
         left: -100%;
     }
-    .nav-bar .nav-content li{
+    .nav-bar .wide-nav .nav-content li{
         display: block;
     }
-    .nav-bar .nav-content li a{
+    .nav-bar .wide-nav .nav-content li a{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
     }
-    .nav-bar.sticky .nav-content li a{
+    .nav-bar.sticky .wide-nav .nav-content li a{
         color: rgb(0, 0, 0);
     }
 }

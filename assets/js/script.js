@@ -10,6 +10,6 @@ $(document).ready(function(){
     
     });
     //toggle button//
-    function animate(x){
-        x.classList.toggle("change");
-    }
+    //function animate(x){
+       // x.classList.toggle("change");
+    
