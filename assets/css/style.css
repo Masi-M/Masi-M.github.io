@@ -27,7 +27,7 @@ navigation bar styling
     /*background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 45%,rgba(0,0,0,1) 45%, rgba(255,255,255,1) 46% rgba(0,0,0,1) 100%); */
 }
 .nav-bar.sticky{
-    padding: 15px;
+    padding: 15px 0;
     background: aqua;
 }
 
@@ -56,16 +56,13 @@ navigation bar styling
 .nav-bar .nav-content li{
     list-style: none;
     display: inline-block;
-
-}
-.nav-bar .nav-content li a{
-    color: rgb(0, 0, 0)
-}
-.nav-bar.sticky .nav-content li a{
     color: rgb(255, 255, 255);
 }
+.nav-bar .nav-content li a{
+    color: rgb(255, 255, 255)
+}
 .nav-bar.sticky .nav-content li a{
-    color: rgb(0, 246, 242);
+    color: rgb(0, 0, 0);
 }
 .nav-bar .nav-content li a{
     color: white;
@@ -81,11 +78,31 @@ navigation bar styling
     color: rgb(0, 0, 0);
 }
 /*menu button styling*/
-.menu-btn{
-    color: rgb(255, 255, 255);
-    font-size: 23px;
+.menu{
+    display: inline-block;
     cursor: pointer;
-    display: none;
+    color: rgb(255, 255, 255);
+}
+.topBar .midBar .botBar{
+    width: 35px;
+    height: 50px;
+    background: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+/*rotate top bar*/
+.change .topBar{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+/*fade out the mid bar*/
+.change .midBar {
+    opacity: 0;
+}
+/*rotate bottom bar*/
+.change .botBar {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
 }
 /*
 .logo  a:hover span{
@@ -126,25 +143,26 @@ home
 }
 /*responsive query*/
 @media(max-width: 947px){
-    .menu-btn{
-    display: block;
-    z-index: 999;
-}
     .wide-nav{
         padding: 0 50px;
     }
+    .menu-btn{
+    display: block;
+    z-index: 999;
+    
+}
     .nav-bar .nav-content{
         position: fixed;
         height: 100vh;
         width: 100%;
-        left: 0;
+        left: -100%;
         top: 0;
         background: black;
         text-align: center;
         padding-top: 80px;
     }
-    .nav-bar .menu.active{
-        display: block;
+    .nav-bar .nav-content.active{
+        left: -100%;
     }
     .nav-bar .nav-content li{
         display: block;
@@ -153,5 +171,8 @@ home
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
+    }
+    .nav-bar.sticky .nav-content li a{
+        color: rgb(0, 0, 0);
     }
 }

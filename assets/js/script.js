@@ -6,5 +6,10 @@ $(document).ready(function(){
         else{
             $('.nav-bar').removeClass("sticky");
         }
-    })
-});
+    });
+    
+    });
+    //toggle button//
+    function animate(x){
+        x.classList.toggle("change");
+    }
