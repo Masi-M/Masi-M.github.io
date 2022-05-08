@@ -9,6 +9,7 @@ font : @import url()
     text-decoration: none;
     
 }
+
 /*
 navigation bar styling
 */
@@ -20,14 +21,14 @@ navigation bar styling
 .nav-bar{
     position: fixed;
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
     font-family: 'Courier New', Courier, monospace, sans-serif;
     transition: all 0.3s ease;
     background: rgb(0, 0, 0);
     /*background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 45%,rgba(0,0,0,1) 45%, rgba(255,255,255,1) 46% rgba(0,0,0,1) 100%); */
 }
 .nav-bar.sticky{
-    padding: 15px 0;
+    padding: 5px 0;
     background: aqua;
 }
 
@@ -65,8 +66,8 @@ navigation bar styling
     display: inline-block;
     color: rgb(255, 255, 255);
 }
-.nav-bar.sticky .wide-nav .nav-content li a{
-    color: rgb(0, 0, 0);
+.nav-bar.sticky .wide-nav .nav-content li a:hover{
+    color: rgb(255, 255, 255);
 }
 .nav-bar.sticky .wide-nav .logo a:hover{
     color: rgb(0, 0, 0);
@@ -129,9 +130,7 @@ home css
     min-height: 500px;
     font-family: 'Courier New', Courier, monospace, sans-serif;
 }
-.background{
-    opacity: 0.5;
-}
+
 /*
 home 
 */
