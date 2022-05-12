@@ -7,25 +7,24 @@ font : @import url()
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    
+    background: radial-gradient(rgb(234, 54, 220), rgb(23, 44, 231)) center no-repeat fixed;
+
 }
 
 /*
 navigation bar styling
 */
 .wide-nav{
-    max-width: 1300px;
+    max-width: 100vw;
     padding: 0 80px;
     margin: auto;
 }
 .nav-bar{
     position: fixed;
     width: 100%;
-    padding: 10px 0;
+    padding: 10px 0 0 0;
     font-family: 'Courier New', Courier, monospace, sans-serif;
     transition: all 0.3s ease;
-    background: rgb(0, 0, 0);
-    /*background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 45%,rgba(0,0,0,1) 45%, rgba(255,255,255,1) 46% rgba(0,0,0,1) 100%); */
 }
 .nav-bar.sticky{
     padding: 3px 0 5px 0;
