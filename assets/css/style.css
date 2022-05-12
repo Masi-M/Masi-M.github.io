@@ -8,7 +8,7 @@ font : @import url()
     box-sizing: border-box;
     text-decoration: none;
     background: radial-gradient(rgb(234, 54, 220), rgb(23, 44, 231)) center no-repeat fixed;
-
+    max-width: 100vw;
 }
 
 /*
@@ -27,7 +27,7 @@ navigation bar styling
     transition: all 0.3s ease;
 }
 .nav-bar.sticky{
-    padding: 3px 0 5px 0;
+    padding: 6px 0 3px 0;
     border-bottom: #333;
     background: radial-gradient(rgb(234, 54, 220), rgb(23, 44, 231)) center no-repeat fixed;
     ;
@@ -171,7 +171,7 @@ home
         left: -100%;
         top: 0;
         background: black;
-        text-align: center;
+        text-align: justify;
         padding-top: 80px;
     }
     .nav-bar .nav-content.active{
@@ -187,5 +187,33 @@ home
     }
     .nav-bar.sticky .wide-nav .nav-content li a{
         color: rgb(0, 0, 0);
+    }
+}
+@media(max-width: 400px){
+    *{
+        width: 100vw;
+        background-position: center;
+    }
+    .nav-bar {
+        position: fixed;
+        padding-top: 10px;
+        padding-left: -10px;
+        margin: 0;
+        width: 100vw;
+    }
+    .home{
+        height: 100vh;
+        width: 100vw;
+    }
+    .home .home-content .input-1{
+        margin-left: -100%;
+        margin-top: -10px;
+    }
+    .home .home-content .input-2{
+        margin-left: -100%;
+        font-size: 50px;
+    }
+    .home .home-content .input-3{
+        margin-left: -100%;
     }
 }
