@@ -28,8 +28,10 @@ navigation bar styling
     /*background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 45%,rgba(0,0,0,1) 45%, rgba(255,255,255,1) 46% rgba(0,0,0,1) 100%); */
 }
 .nav-bar.sticky{
-    padding: 5px 0;
-    background: aqua;
+    padding: 3px 0 5px 0;
+    border-bottom: #333;
+    background: radial-gradient(rgb(234, 54, 220), rgb(23, 44, 231)) center no-repeat fixed;
+    ;
 }
 
 .nav-bar .wide-nav{
@@ -125,7 +127,7 @@ home css
 */
 .home{
     display: flex;
-    background: url(/assets/images/IMG_20220416_182513.jpg) no-repeat center;
+    background: radial-gradient(rgb(234, 54, 220), rgb(23, 44, 231)) center no-repeat fixed;
     height: 100vh;
     min-height: 500px;
     font-family: 'Courier New', Courier, monospace, sans-serif;
